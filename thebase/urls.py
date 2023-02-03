@@ -10,5 +10,5 @@ urlpatterns = [
     path("resumebase/", include('resumebase.urls')),
     path('tinymce/', include('tinymce.urls')),
     path('blog/', include('blog.urls')),
-    path('pages/', include('pages.urls')),
+    path('', include('pages.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
